@@ -34,10 +34,13 @@ func show() {
 }
 
 //結構體類型  可以作為對象類型
+//結構體作為接收者
 func (c cat) show() {
 	fmt.Println("喵喵叫")
+	fmt.Printf("我是%s, 喵喵叫\n", c.name)
 }
 
+//方法名一樣 接收者不一樣 方法也就不一樣
 func (d dog) show() {
 	fmt.Println("汪汪叫")
 }
