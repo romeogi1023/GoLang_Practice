@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io"
 	"os"
@@ -25,7 +26,7 @@ func createFile() {
 
 func main() {
 
-	createFile()
+	//createFile()
 
 	//唯讀方式打開文件
 	fp, err := os.Open("./xyz.txt")
@@ -34,18 +35,41 @@ func main() {
 		return
 	}
 
-	buf := make([]byte, 1024*2) //2k
-
-	for {
-		n, err := fp.Read(buf)
-		//io.EOF文件的結尾
-		//讀取到文件末尾 返回值 errors.New("EOF")
-		if err == io.EOF {
-			break
-		}
-		fmt.Println(string(buf[:n]))
-	}
-
 	//關閉文件
 	defer fp.Close()
+
+	//創建文件的緩衝區
+	r := bufio.NewReader(fp)
+
+	// //行讀取 截取的標誌
+	// slice, _ := r.ReadBytes('\n')
+	// fmt.Println(string(slice))
+	// slice, _ = r.ReadBytes('\n')
+	// fmt.Println(string(slice))
+	// slice, _ = r.ReadBytes('\n')
+	// fmt.Println(string(slice))
+
+	// for {
+	// 	//遇到'\n'結束讀取 但是'\n'也讀取進入
+	// 	buf, err1 := r.ReadBytes('\n')
+	// 	//先打印再判斷
+	// 	fmt.Println(string(buf))
+	// 	if err1 != nil {
+	// 		if err1 == io.EOF {
+	// 			break
+	// 		}
+	// 		fmt.Println(err1)
+	// 	}
+	// }
+
+	for {
+		str, err2 := r.ReadString('\n')
+		fmt.Println(str)
+		if err2 != nil {
+			if err2 == io.EOF {
+				break
+			}
+		}
+	}
+
 }

@@ -1,0 +1,1209 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.2.3读取文件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1024wen-jian-cao-zuo-shi-li.html" />
+    
+    
+    <link rel="prev" href="1022xie-ru-shu-ju.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chapter1.html">
+            
+                <a href="../../chapter1.html">
+            
+                    
+                    1. 初识GO语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../chapter1/11-goyu-yan-jie-shao.html">
+            
+                <a href="../../chapter1/11-goyu-yan-jie-shao.html">
+            
+                    
+                    1.1 GO语言介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../chapter1/11-goyu-yan-jie-shao/qu-kuai-lian.html">
+            
+                <a href="../../chapter1/11-goyu-yan-jie-shao/qu-kuai-lian.html">
+            
+                    
+                    区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../chapter1/12-huan-jing-da-jian.html">
+            
+                <a href="../../chapter1/12-huan-jing-da-jian.html">
+            
+                    
+                    1.2  环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../chapter1/12-huan-jing-da-jian/ubuntuhuan-jing-da-jian.html">
+            
+                <a href="../../chapter1/12-huan-jing-da-jian/ubuntuhuan-jing-da-jian.html">
+            
+                    
+                    Ubuntu环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../chapter1/14-ji-zhong-ide-jie-shao.html">
+            
+                <a href="../../chapter1/14-ji-zhong-ide-jie-shao.html">
+            
+                    
+                    1.3 几种IDE介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../chapter1/13-di-yi-ge-go-cheng-xu.html">
+            
+                <a href="../../chapter1/13-di-yi-ge-go-cheng-xu.html">
+            
+                    
+                    1.4 第一个GO程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2.html">
+            
+                <a href="../../2.html">
+            
+                    
+                    2. 基础类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../2/1.html">
+            
+                <a href="../../2/1.html">
+            
+                    
+                    2.1 命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../2/22-bian-liang.html">
+            
+                <a href="../../2/22-bian-liang.html">
+            
+                    
+                    2.2 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../2/23-chang-liang.html">
+            
+                <a href="../../2/23-chang-liang.html">
+            
+                    
+                    2.3 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../2/24-ji-chu-shu-ju-lei-xing.html">
+            
+                <a href="../../2/24-ji-chu-shu-ju-lei-xing.html">
+            
+                    
+                    2.4 基础数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../2/25-fmt-bao-de-ge-shi-hua-shu-chu-shu-ru.html">
+            
+                <a href="../../2/25-fmt-bao-de-ge-shi-hua-shu-chu-shu-ru.html">
+            
+                    
+                    2.5 fmt 包的格式化输出输入 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../2/26-lei-xing-zhuan-huan.html">
+            
+                <a href="../../2/26-lei-xing-zhuan-huan.html">
+            
+                    
+                    2.6 类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../2/27-lei-xing-bie-ming.html">
+            
+                <a href="../../2/27-lei-xing-bie-ming.html">
+            
+                    
+                    2.7 类型别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../3.html">
+            
+                <a href="../../3.html">
+            
+                    
+                    3. 运算符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../3/31.html">
+            
+                <a href="../../3/31.html">
+            
+                    
+                    3.1 算术运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../3/32-guan-xi-yun-suan-fu.html">
+            
+                <a href="../../3/32-guan-xi-yun-suan-fu.html">
+            
+                    
+                    3.2 关系运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../3/33-luo-ji-yun-suan-fu.html">
+            
+                <a href="../../3/33-luo-ji-yun-suan-fu.html">
+            
+                    
+                    3.3 逻辑运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../3/34-wei-yun-suan-fu.html">
+            
+                <a href="../../3/34-wei-yun-suan-fu.html">
+            
+                    
+                    3.4 位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../3/35-fu-zhi-yun-suan-fu.html">
+            
+                <a href="../../3/35-fu-zhi-yun-suan-fu.html">
+            
+                    
+                    3.5 赋值运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../3/36-qi-ta-yun-suan-fu.html">
+            
+                <a href="../../3/36-qi-ta-yun-suan-fu.html">
+            
+                    
+                    3.6 其他运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../3/37-yun-suan-fu-you-xian-ji.html">
+            
+                <a href="../../3/37-yun-suan-fu-you-xian-ji.html">
+            
+                    
+                    3.7 运算符优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4.html">
+            
+                <a href="../../4.html">
+            
+                    
+                    4. 流程控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4/41.html">
+            
+                <a href="../../4/41.html">
+            
+                    
+                    4.1 选择结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4/42-xun-huan-yu-ju.html">
+            
+                <a href="../../4/42-xun-huan-yu-ju.html">
+            
+                    
+                    4.2 循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4/43-tiao-zhuan-yu-ju.html">
+            
+                <a href="../../4/43-tiao-zhuan-yu-ju.html">
+            
+                    
+                    4.3 跳转语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../5.html">
+            
+                <a href="../../5.html">
+            
+                    
+                    5. 函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../5/51.html">
+            
+                <a href="../../5/51.html">
+            
+                    
+                    5.1 定义格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../5/52-zi-ding-yi-han-shu.html">
+            
+                <a href="../../5/52-zi-ding-yi-han-shu.html">
+            
+                    
+                    5.2 自定义函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../5/53-di-gui-han-shu.html">
+            
+                <a href="../../5/53-di-gui-han-shu.html">
+            
+                    
+                    5.3 递归函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../5/54-han-shu-lei-xing.html">
+            
+                <a href="../../5/54-han-shu-lei-xing.html">
+            
+                    
+                    5.4 函数类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../5/55-ni-ming-han-shu-yu-bi-bao.html">
+            
+                <a href="../../5/55-ni-ming-han-shu-yu-bi-bao.html">
+            
+                    
+                    5.5 匿名函数与闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../5/58-zuo-yong-yu.html">
+            
+                <a href="../../5/58-zuo-yong-yu.html">
+            
+                    
+                    5.6 作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../6.html">
+            
+                <a href="../../6.html">
+            
+                    
+                    6. 工程管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../6/61.html">
+            
+                <a href="../../6/61.html">
+            
+                    
+                    6.1 工作区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../6/62-bao.html">
+            
+                <a href="../../6/62-bao.html">
+            
+                    
+                    6.2 创建同级目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../6/63-ce-shi-an-li.html">
+            
+                <a href="../../6/63-ce-shi-an-li.html">
+            
+                    
+                    6.3 创建不同级目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../7.html">
+            
+                <a href="../../7.html">
+            
+                    
+                    7. 复合类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../7/71-fen-lei.html">
+            
+                <a href="../../7/71-fen-lei.html">
+            
+                    
+                    7.1 分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../7/73-shu-zu.html">
+            
+                <a href="../../7/73-shu-zu.html">
+            
+                    
+                    7.2 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../6/74-slice.html">
+            
+                <a href="../../6/74-slice.html">
+            
+                    
+                    7.3 切片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../7/75-map.html">
+            
+                <a href="../../7/75-map.html">
+            
+                    
+                    7.4 map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../7/76-jie-gou-ti.html">
+            
+                <a href="../../7/76-jie-gou-ti.html">
+            
+                    
+                    7.5 结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../7/76-zhi-zhen.html">
+            
+                <a href="../../7/76-zhi-zhen.html">
+            
+                    
+                    7.6 指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../8.html">
+            
+                <a href="../../8.html">
+            
+                    
+                    8. 面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../8/81.html">
+            
+                <a href="../../8/81.html">
+            
+                    
+                    8.1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../8/82-ni-ming-zu-he.html">
+            
+                <a href="../../8/82-ni-ming-zu-he.html">
+            
+                    
+                    8.2 匿名字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../8/83-fang-fa.html">
+            
+                <a href="../../8/83-fang-fa.html">
+            
+                    
+                    8.3 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../8/84-jie-kou.html">
+            
+                <a href="../../8/84-jie-kou.html">
+            
+                    
+                    8.4 接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../8/85-lei-xing-duan-yan.html">
+            
+                <a href="../../8/85-lei-xing-duan-yan.html">
+            
+                    
+                    8.5 类型断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../9.html">
+            
+                <a href="../../9.html">
+            
+                    
+                    9. 异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../9/91-errorjie-kou.html">
+            
+                <a href="../../9/91-errorjie-kou.html">
+            
+                    
+                    9.1 error接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../9/92-panic.html">
+            
+                <a href="../../9/92-panic.html">
+            
+                    
+                    9.2 panic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../9/93-yan-chi-diao-yong-defer.html">
+            
+                <a href="../../9/93-yan-chi-diao-yong-defer.html">
+            
+                    
+                    9.3 延迟调用defer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../9/93-recover.html">
+            
+                <a href="../../9/93-recover.html">
+            
+                    
+                    9.4 recover
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../10.html">
+            
+                <a href="../../10.html">
+            
+                    
+                    10. 文本文件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10.html">
+            
+                <a href="../10.html">
+            
+                    
+                    10.1 字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../102-wen-jian-cao-zuo.html">
+            
+                <a href="../102-wen-jian-cao-zuo.html">
+            
+                    
+                    10.2 文件操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="1021chuang-jian-wen-jian.html">
+            
+                <a href="1021chuang-jian-wen-jian.html">
+            
+                    
+                    10.2.1创建文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="1022xie-ru-shu-ju.html">
+            
+                <a href="1022xie-ru-shu-ju.html">
+            
+                    
+                    10.2.2写入数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2.3" data-path="1023du-qu-wen-jian.html">
+            
+                <a href="1023du-qu-wen-jian.html">
+            
+                    
+                    10.2.3读取文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="1024wen-jian-cao-zuo-shi-li.html">
+            
+                <a href="1024wen-jian-cao-zuo-shi-li.html">
+            
+                    
+                    10.2.4文件操作实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >10.2.3读取文件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x8BFB;&#x53D6;&#x6587;&#x4EF6;"><strong>&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</strong></h2>
+<h3 id="read-&#x8BFB;&#x53D6;&#x6587;&#x4EF6;"><strong>Read &#x8BFB;&#x53D6;&#x6587;&#x4EF6;</strong></h3>
+<p>&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5E76;&#x4E14;&#x4E5F;&#x5DF2;&#x7ECF;&#x6709;&#x6570;&#x636E;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x8BE5;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#xFF08;1&#xFF09;&#x6253;&#x5F00;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x6587;&#x4EF6;</p>
+<p>&#xFF08;2&#xFF09;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8BFB;&#x53D6;</p>
+<p>&#xFF08;3&#xFF09;&#x5173;&#x95ED;&#x6587;&#x4EF6;</p>
+<p>&#x5728;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x662F;Write,&#x90A3;&#x4E48;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x662F;Read.</p>
+<p>&#x5173;&#x4E8E;Read( )&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;io&quot;</span>
+    <span class="hljs-string">&quot;os&quot;</span>
+)
+<span class="hljs-keyword">func</span> main() {
+
+    <span class="hljs-comment">//&#x6253;&#x5F00;&#x6587;&#x4EF6;</span>
+    fp, err := os.Open(<span class="hljs-string">&quot;D:/a.txt&quot;</span>)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        fmt.Println(<span class="hljs-string">&quot;err=&quot;</span>, err)
+        <span class="hljs-keyword">return</span>
+    }
+
+    buf := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">1024</span>*<span class="hljs-number">2</span>) <span class="hljs-comment">//2k&#x5927;&#x5C0F;</span>
+    <span class="hljs-comment">//n&#x4EE3;&#x8868;&#x4ECE;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#x7684;&#x957F;&#x5EA6;</span>
+    n, err1 := fp.Read(buf)
+    <span class="hljs-keyword">if</span> err1 != <span class="hljs-literal">nil</span> &amp;&amp; err1 != io.EOF {
+        fmt.Println(<span class="hljs-string">&quot;err1=&quot;</span>, err1)
+        <span class="hljs-keyword">return</span>
+    }
+    fmt.Println(<span class="hljs-string">&quot;buf=&quot;</span>, <span class="hljs-keyword">string</span>(buf[:n]))
+
+    <span class="hljs-comment">//&#x5173;&#x95ED;&#x6587;&#x4EF6;</span>
+    <span class="hljs-keyword">defer</span> fp.Close()
+
+}
+</code></pre>
+<p>Open( )&#x662F;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF0C;&#x4E0E;OpenFile( )&#x7684;&#x533A;&#x522B;&#x662F;&#xFF0C;Open( )&#x53EA;&#x6709;&#x8BFB;&#x7684;&#x6743;&#x9650;</p>
+<p>&#x5728;&#x4F7F;&#x7528;Read( )&#x51FD;&#x6570;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5207;&#x7247;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x5B9A;&#x4E49;&#x5207;&#x7247;&#x65F6;&#x7C7B;&#x578B;&#x4E3A;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#xFF0C;&#x5C06;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4FDD;&#x5B58;&#x5728;&#x5207;&#x7247;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x9664;&#x4E86;&#x5BF9;&#x5176;&#x5224;&#x65AD;&#x662F;&#x5426;&#x51FA;&#x9519;&#x65F6;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x8981;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;(&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5BFC;&#x5165;io&#x5305;)&#x3002;</p>
+<p>Read( )&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x8F93;&#x51FA;&#x5207;&#x7247;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x6587;&#x4EF6;&#x6570;&#x636E;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x8BFB;&#x53D6;&#x7684;&#x662F;&#x4ECE;&#x6700;&#x5F00;&#x59CB;&#x5230;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x957F;&#x5EA6;&#xFF0C;&#x56E0;&#x4E3A;&#x6709;&#x53EF;&#x80FD;&#x5B58;&#x50A8;&#x5230;&#x5207;&#x7247;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x8FBE;&#x4E0D;&#x5230;&#x5207;&#x7247;&#x7684;&#x603B;&#x957F;&#x5EA6;&#xFF08;&#x4E5F;&#x662F;&#x5207;&#x7247;&#x65F6;2k,&#x4F46;&#x662F;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x6709;&#x53EF;&#x80FD;&#x53EA;&#x6709;1k&#xFF09;</p>
+<h3 id="&#x6309;&#x884C;&#x8BFB;&#x53D6;"><strong>&#x6309;&#x884C;&#x8BFB;&#x53D6;</strong></h3>
+<p>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x662F;&#x5C06;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5168;&#x90E8;&#x8BFB;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x5B58;&#x653E;&#x5728;&#x5207;&#x7247;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x6BCF;&#x6B21;&#x53EA;&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x8FD9;&#x9700;&#x8981;&#x7528;&#x5230;bufio&#x5305;&#x4E2D;&#x7684;ReadBytes&#x51FD;&#x6570;&#x3002;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>1&#xFF1A;&#x6253;&#x5F00;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-go">fp, err := os.Open(<span class="hljs-string">&quot;D:/a.txt&quot;</span>)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    fmt.Println(<span class="hljs-string">&quot;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x5931;&#x8D25;&quot;</span>, err)
+    <span class="hljs-keyword">return</span>
+}
+</code></pre>
+<p>2&#xFF1A;&#x521B;&#x5EFA;&#x7F13;&#x51B2;&#x533A;</p>
+<p>&#x5728;&#x4F7F;&#x7528;ReadBytes( )&#x51FD;&#x6570;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x5230;&#x7F13;&#x51B2;&#x533A;,&#x6240;&#x8C13;&#x7F13;&#x51B2;&#x533A;&#x5C31;&#x662F;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5148;&#x5C06;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x8BE5;&#x533A;&#x57DF;&#x5185;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5C06;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x5199;&#x5230;&#x78C1;&#x76D8;&#x4E0A;&#x3002;&#x63D0;&#x4F9B;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x539F;&#x56E0;&#x662F;&#xFF1A;</p>
+<p>&#x4E3A;&#x4E86;&#x7F13;&#x548C; CPU &#x4E0E;&#x78C1;&#x76D8;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x901F;&#x5EA6;&#x4E0D;&#x5339;&#x914D;&#x77DB;&#x76FE;&#x3002;&#x6587;&#x4EF6;&#x7F13;&#x51B2;&#x533A;&#x662F;&#x7528;&#x4EE5;&#x6682;&#x65F6;&#x5B58;&#x653E;&#x8BFB;&#x5199;&#x671F;&#x95F4;&#x7684;&#x6587;&#x4EF6;&#x6570;&#x636E;&#x800C;&#x5728;&#x5185;&#x5B58;&#x533A;&#x9884;&#x7559;&#x7684;&#x4E00;&#x5B9A;&#x7A7A;&#x95F4;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-comment">//&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x7F13;&#x51B2;&#x533A;</span>
+r := bufio.NewReader(fp)
+</code></pre>
+<p>3&#xFF1A;&#x5FAA;&#x73AF;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x76F4;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">for</span> {
+    <span class="hljs-comment">//&#x9047;&#x5230;&apos;\n&apos;&#x7ED3;&#x675F;&#x8BFB;&#x53D6;&#xFF0C;&#x4F46;&#x662F;&apos;\n&apos;&#x4E5F;&#x8BFB;&#x53D6;&#x8FDB;&#x5165;</span>
+    buf,err := r.ReadBytes(<span class="hljs-string">&apos;\n&apos;</span>)
+    fmt.Println(<span class="hljs-string">&quot;buf = &quot;</span>,<span class="hljs-keyword">string</span>(buf))
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">if</span> err == io.EOF {
+            <span class="hljs-keyword">break</span>
+        }
+        fmt.Println(<span class="hljs-string">&quot;err=&quot;</span>,err)
+    }
+}
+</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528;ReadBytes( )&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x662F;&#x2018;\n&#x2019;,&#x8868;&#x793A;&#x9047;&#x5230;&#x2019;\n&#x2019;&#x5C31;&#x7ED3;&#x675F;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;&#x6B7B;&#x5FAA;&#x73AF;&#xFF08;&#x6BCF;&#x5FAA;&#x73AF;&#x4E00;&#x6B21;&#xFF0C;&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#xFF09;&#xFF0C;&#x53EA;&#x6709;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x4E86;&#xFF0C;&#x624D;&#x9000;&#x51FA;&#x6574;&#x4E2A;&#x5FAA;&#x73AF;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5C06;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x6253;&#x5370;&#x51FA;&#x6765;&#xFF0C;&#x6CE8;&#x610F;ReadBytes( )&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5B57;&#x8282;&#x5207;&#x7247;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x6253;&#x5370;&#x65F6;&#x8981;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>4&#xFF1A;&#x6700;&#x540E;&#x5173;&#x95ED;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-go"><span class="hljs-comment">//&#x5173;&#x95ED;&#x6587;&#x4EF6;</span>
+<span class="hljs-keyword">defer</span> fp.Close()
+</code></pre>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#x6587;&#x4EF6;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x8BFB;&#x53D6;&#xFF0C;&#x4EE5;&#x53CA;&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x5BF9;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<p><strong>&#x5173;&#x4E8E;&#x8DEF;&#x5F84;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</strong></p>
+<p>&#x7B2C;&#x4E00;&#xFF1A;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x6240;&#x8C13;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x6307;&#x7684;&#x662F;&#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x4E8E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x4E00;&#x53EA;&#x4F7F;&#x7528;&#x7684;a.txt,&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x7684;&#x4F4D;&#x7F6E;&#x4E0E;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x7684;&#x8DEF;&#x5F84;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#xFF1A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF1A;&#x6307;&#x7684;&#x662F;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x76F4;&#x63A5;&#x80FD;&#x5728;&#x6211;&#x7684;&#x7535;&#x8111;&#x4E2D;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x3002;&#x4F8B;&#x5982;&#xFF1A;D:\Info.txt,</p>
+<ul>
+<li><strong>&#x5EFA;&#x8BAE;&#x6211;&#x4EEC;&#x4EE5;&#x540E;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;</strong></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1022xie-ru-shu-ju.html" class="navigation navigation-prev " aria-label="Previous page: 10.2.2写入数据">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1024wen-jian-cao-zuo-shi-li.html" class="navigation navigation-next " aria-label="Next page: 10.2.4文件操作实例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.2.3读取文件","level":"1.11.2.3","depth":3,"next":{"title":"10.2.4文件操作实例","level":"1.11.2.4","depth":3,"path":"10/102-wen-jian-cao-zuo/1024wen-jian-cao-zuo-shi-li.md","ref":"10/102-wen-jian-cao-zuo/1024wen-jian-cao-zuo-shi-li.md","articles":[]},"previous":{"title":"10.2.2写入数据","level":"1.11.2.2","depth":3,"path":"10/102-wen-jian-cao-zuo/1022xie-ru-shu-ju.md","ref":"10/102-wen-jian-cao-zuo/1022xie-ru-shu-ju.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"10/102-wen-jian-cao-zuo/1023du-qu-wen-jian.md","mtime":"2019-01-26T07:20:56.891Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-26T08:27:50.376Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
