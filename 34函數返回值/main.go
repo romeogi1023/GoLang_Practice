@@ -21,5 +21,5 @@ func main() {
 	var test3 int
 	//匿名變量
 	_, test3, test = sum(2, 7)
-	fmt.Println( test3, test)
+	fmt.Println(test3, test)
 }
