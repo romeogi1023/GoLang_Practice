@@ -6,6 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+//go test -v
+
 // Simple testing what different between Fatal and Error
 func TestNew(t *testing.T) {
 	c, err := New("", 100)
