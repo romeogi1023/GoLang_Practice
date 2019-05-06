@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "profile": "default",
+  "regions": [
+    "ap-southeast-1"
+  ],
+  "hooks": {
+    "build": [
+      "up version"
+    ],
+    "clean": [
+    ]
+  }
+}
